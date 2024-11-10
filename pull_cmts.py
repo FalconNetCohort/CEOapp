@@ -75,9 +75,11 @@ def get_event_list(source: str = None):
     if next_link is not None:
         get_event_list(next_link)
 
-get_event_list()
+text = get_data(url)
+print(text)
+#get_event_list(url)
 
-with open('plist.pickle', 'wb') as file:
-    pickle.dump(dict(plist), file)
-with open('events.pickle', 'wb') as file:
-    pickle.dump(events, file)
+#with open('plist.pickle', 'wb') as file:
+#    pickle.dump(dict(plist), file)
+#with open('events.pickle', 'wb') as file:
+#    pickle.dump(events, file)

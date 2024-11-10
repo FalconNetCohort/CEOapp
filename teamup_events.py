@@ -2,12 +2,13 @@ import requests
 import config
 #import parse_cmts
 from dataclasses import dataclass
-from datetime import datetime, timedelta, UTC
+from datetime import datetime, timedelta, UTC, timezone
 
 
 
 #this should be imported from parse_cmts.py but that file doesnt work atm, so this is
 #temporary workaround
+@dataclass
 class CMTSEvent:
     type: str  # 'TypeforCommMaster'
     name: str  # 'Title'
@@ -19,6 +20,7 @@ class CMTSEvent:
     attending_class_years: list[bool]
     attending_users: list[str]
     accountability_method: str
+
 
 #set headers
 session = requests.Session()
@@ -40,38 +42,41 @@ def get_subcalendar_ids() -> list[str]:
 
 #IMPORTANT FUNCTON: post event to calendar
 def post_event(
-        start_dt: str, 
-        end_dt: str, 
-        title: str, 
-        attending_units: list[str],     
-        attending_class_years: list[bool],
-        attending_users: list[str],
-        accountability_method: str, 
+        event: CMTSEvent, 
     ):
 
-    subcalendar_id = (get_subcalendar_ids())[0];    
-    note = accountability_method
 
+    subcalendar_id = (get_subcalendar_ids())[0];    
+    note = event.accountability_method # this should be built out to include all extra info
     params = {
         'inputFormat':'html'
     }    
     
     payload = {
         'subcalendar_ids':[subcalendar_id],
-        'start_dt':start_dt, 
-        'end_dt':end_dt,
-        'title': title,
+        'start_dt': event.submission_start, 
+        'end_dt': event.submission_deadline,
+        'title': event.name,
         'notes': note
     }
     
     r = session.post('https://api.teamup.com/ksvvx3e1n68gmkz7x8/events', json=payload, params=params)
     return r.status_code,r.text
 
-#fake event test for reference
-start = "2024-11-09T13:41:00Z"
-end = "2024-11-09T13:41:00Z"
-title = "hello"
-attending_unit = {"one","two"}
-class_years = [False, False, False, False]
-accountability = "bing"
-print(post_event(start,end,title,attending_unit,class_years,attending_unit,accountability))
+now = timezone.utc
+time = datetime.now(now).isoformat(timespec='seconds')
+print(time)
+event = CMTSEvent(
+    "other",  
+    "Event",  
+    "Test", 
+    time,
+    time, 
+    time, 
+    ["Hello"],
+    [True,True,True,True],
+    ["1","2","3"],
+    "Accountability",
+)
+
+print(post_event(event))

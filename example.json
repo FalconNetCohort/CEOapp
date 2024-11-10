@@ -1,0 +1,222 @@
+{
+    "configuration": {
+        "general_settings": {
+            "admin_email": "tomisham007@gmail.com",
+            "language": "en",
+            "control_panel_default_state": "visible",
+            "onetomany_enabled": true,
+            "onetomany_layout": 0,
+            "user_signup_enabled": true,
+            "icsfeeds_enabled": true,
+            "rssfeeds_enabled": false,
+            "about": "\\u003Cp\\u003EThe calendar administrator can edit this \\u003Ca href=\\u0022https:\\/\\/blog.teamup.com\\/2019\\/03\\/05\\/customize-the-about-box-for-your-needs\\/\\u0022 target=\\u0022_blank\\u0022 rel=\\u0022noreferrer noopener external\\u0022\\u003EAbout text\\u003C\\/a\\u003E and \\u003Ca href=\\u0022https:\\/\\/calendar.teamup.com\\/kb\\/getting-started-guide-for-administrators\\/#configure-your-teamup-calendar\\u0022 target=\\u0022_blank\\u0022 rel=\\u0022noreferrer noopener external\\u0022\\u003Econfigure\\u003C\\/a\\u003E everything in Settings.\\u003C\\/p\\u003E \\u003Cp\\u003ETo access this calendar on your phone, install a \\u003Ca href=\\u0022https:\\/\\/www.teamup.com\\/apps\\/\\u0022 target=\\u0022_blank\\u0022 rel=\\u0022noreferrer noopener external\\u0022\\u003ETeamup App\\u003C\\/a\\u003E.\\u003C\\/p\\u003E \\u003Cp\\u003ELearn more about \\u003Ca href=\\u0022https:\\/\\/www.teamup.com\\/teamup-difference\\/\\u0022 target=\\u0022_blank\\u0022 rel=\\u0022noreferrer noopener external\\u0022\\u003Ehow Teamup is different\\u003C\\/a\\u003E.\\u003C\\/p\\u003E",
+            "about_enabled": true,
+            "about_title": "About",
+            "event_sharing_enabled": true,
+            "enabled_event_sharing_services": {
+                "page": true,
+                "add-to-calendar": true,
+                "facebook": true,
+                "twitter": true,
+                "linkedin": true,
+                "whatsapp": true,
+                "xing": false,
+                "email": true,
+                "teamup": true,
+                "google": true,
+                "outlook": true,
+                "outlook-web": true,
+                "outlook-com": true,
+                "apple": true,
+                "other": true,
+                "yahoo": false
+            }
+        },
+        "calendar_views": {
+            "default_view": "W",
+            "show_day_view": true,
+            "show_week_view": true,
+            "show_multiday_view": false,
+            "show_multiweek_view": true,
+            "show_month_view": true,
+            "show_agenda_view": true,
+            "show_list_view": true,
+            "show_scheduler_view": true,
+            "scheduler_date_range": "week",
+            "scheduler_amount_of_unit": 4,
+            "scheduler_resolution": "12h",
+            "scheduler_hide_empty": false,
+            "show_table_view": true,
+            "show_year_view": true,
+            "week_hide_weekend": false,
+            "multiweek_number_of_weeks": 10,
+            "timeline_default_date_range": "week",
+            "timeline_default_number_of_days": 5,
+            "timeline_default_number_of_weeks": 4,
+            "timeline_default_zoom_level": 3,
+            "table_cells": "[{\\u0022id\\u0022:\\u0022start\\u0022,\\u0022visible\\u0022:true,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022start-name\\u0022,\\u0022visible\\u0022:false,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022end\\u0022,\\u0022visible\\u0022:true,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022end-name\\u0022,\\u0022visible\\u0022:false,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022recurrence\\u0022,\\u0022visible\\u0022:false,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022builtin_title\\u0022,\\u0022visible\\u0022:true,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022builtin_calendars\\u0022,\\u0022visible\\u0022:true,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022builtin_who\\u0022,\\u0022visible\\u0022:true,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022builtin_location\\u0022,\\u0022visible\\u0022:true,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022builtin_notes\\u0022,\\u0022visible\\u0022:true,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022builtin_signup\\u0022,\\u0022visible\\u0022:false,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022builtin_comments\\u0022,\\u0022visible\\u0022:false,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022builtin_attachments\\u0022,\\u0022visible\\u0022:false,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022created\\u0022,\\u0022visible\\u0022:false,\\u0022sortDirection\\u0022:\\u0022asc\\u0022},{\\u0022id\\u0022:\\u0022updated\\u0022,\\u0022visible\\u0022:false,\\u0022sortDirection\\u0022:\\u0022asc\\u0022}]",
+            "multiday_number_of_days": 3,
+            "agenda_date_range": "3months",
+            "agenda_show_details": false,
+            "list_date_range": "3months",
+            "list_group_by": "month",
+            "list_show_details": false,
+            "year_number_of_months": 12
+        },
+        "date_time": {
+            "tz_dynamic": true,
+            "tz": "America\\/Denver",
+            "tz_show": true,
+            "date_locale": "en",
+            "use_24h_times": false,
+            "time_range_start": 6,
+            "time_range_end": 24,
+            "start_date_type": "current",
+            "start_date": "2024-01-01",
+            "start_date_pattern": "y1",
+            "week_start": 0,
+            "scroll_start_hour": 7,
+            "default_event_duration": -1
+        },
+        "identity": {
+            "title": "testCal",
+            "customize": false,
+            "show_custom_logo": false,
+            "logo_uri": "https:https:\\/\\/teamup.com\\/assets-20241109141521\\/build\\/img\\/inline_svg\\/logo-color.svg",
+            "header_background_color": "#FFFFFF",
+            "header_font_color": "#283842"
+        },
+        "link": {"name": "Modifier", "key": "ksvvx3e1n68gmkz7x8", "id": 19709562, "app_id": 4079991, "type": "anonymous"},
+        "features": {
+            "calendar_limit": 8,
+            "daily_agenda": false,
+            "file_storage": 536870912,
+            "max_file_size": 10485760,
+            "company_cam": false,
+            "passwords": false,
+            "history": 12,
+            "refresh_param": false,
+            "file_upload": true,
+            "notification_for_past": false,
+            "import_feed_frequency": [43200, 10080, 720],
+            "show_footer_logo": true,
+            "custom_field_limit": 1,
+            "custom_field_option_limit": 8,
+            "max_users": false,
+            "attachments": true,
+            "flags": {"use_rss_feed": false, "use_webhooks": false, "use_notifications": false}
+        },
+        "fields": {
+            "definitions": [
+                {
+                    "id": "builtin_title",
+                    "name": "",
+                    "type": "builtin_title",
+                    "type_data": {"min": 0, "is_always_enabled_field": true},
+                    "active": true,
+                    "hidden": false,
+                    "creation_dt": "2024-10-05T14:20:41+00:00",
+                    "update_dt": null
+                },
+                {
+                    "id": "builtin_calendars",
+                    "name": "",
+                    "type": "builtin_calendars",
+                    "type_data": {"min": 0, "shown_in_title": "hidden", "is_always_enabled_field": true, "hide_required": true},
+                    "active": true,
+                    "hidden": false,
+                    "creation_dt": "2024-10-05T14:20:41+00:00",
+                    "update_dt": null
+                },
+                {
+                    "id": "builtin_who",
+                    "name": "",
+                    "type": "builtin_who",
+                    "type_data": {"min": 0, "shown_in_title": "value"},
+                    "active": true,
+                    "hidden": false,
+                    "creation_dt": "2024-10-05T14:20:41+00:00",
+                    "update_dt": null
+                },
+                {
+                    "id": "builtin_location",
+                    "name": "",
+                    "type": "builtin_location",
+                    "type_data": {"show_map_link": true, "min": 0, "shown_in_title": "hidden"},
+                    "active": true,
+                    "hidden": false,
+                    "creation_dt": "2024-10-05T14:20:41+00:00",
+                    "update_dt": null
+                },
+                {"id": "builtin_notes", "name": "", "type": "builtin_notes", "type_data": {"min": 0}, "active": true, "hidden": false, "creation_dt": "2024-10-05T14:20:41+00:00", "update_dt": null},
+                {
+                    "id": "builtin_signup",
+                    "name": "",
+                    "type": "builtin_signup",
+                    "type_data": {
+                        "default_enabled": false,
+                        "default_deadline_enabled": false,
+                        "default_deadline_offset": "P0D",
+                        "default_visibility": "users_with_modify_permission",
+                        "default_limit": 0
+                    },
+                    "active": true,
+                    "hidden": false,
+                    "creation_dt": "2024-10-05T14:20:41+00:00",
+                    "update_dt": null
+                },
+                {
+                    "id": "builtin_comments",
+                    "name": "",
+                    "type": "builtin_comments",
+                    "type_data": {"default_enabled": true, "default_visibility": "all_users"},
+                    "active": true,
+                    "hidden": false,
+                    "creation_dt": "2024-10-05T14:20:41+00:00",
+                    "update_dt": null
+                },
+                {
+                    "id": "builtin_attachments",
+                    "name": "",
+                    "type": "builtin_attachments",
+                    "type_data": {"default_enabled": false},
+                    "active": true,
+                    "hidden": false,
+                    "creation_dt": "2024-10-05T14:20:41+00:00",
+                    "update_dt": null
+                }
+            ]
+        },
+        "subcalendars": [
+            {
+                "id": 13708179,
+                "name": "Calendar 1",
+                "active": true,
+                "color": 15,
+                "overlap": true,
+                "readonly": false,
+                "creation_dt": "2024-10-05T14:20:41+00:00",
+                "update_dt": "2024-10-26T14:45:51+00:00",
+                "type": 0,
+                "attributes": [],
+                "number_of_users": 7,
+                "all_links_access": true
+            },
+            {
+                "id": 13708180,
+                "name": "Calendar 2",
+                "active": true,
+                "color": 32,
+                "overlap": true,
+                "readonly": false,
+                "creation_dt": "2024-10-05T14:20:41+00:00",
+                "update_dt": null,
+                "type": 0,
+                "attributes": [],
+                "number_of_users": 7,
+                "all_links_access": true
+            }
+        ],
+        "user": null
+    }
+}
